@@ -4,3 +4,5 @@ npm_modules/*
 .settings/*
 node_modules/*
 *.log
+
+.vscode/launch.json
