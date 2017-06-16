@@ -5,18 +5,12 @@ Remote Desktop Protocol for Node.js
 
 node-rdpjs is a pure implementation of the Microsoft RDP (Remote Desktop Protocol) protocol (client and server side). node-rdpjs support only SSL security layer.
 
+*+clipboard support (plain text)*
+
 ## Install
 
-You can install last release node-rdpjs through npm :
-
 ```
-npm install node-rdpjs
-```
-
-Or work with dev branch :
-
-```
-git clone https://github.com/citronneur/node-rdpjs.git
+git clone https://github.com/xughv/node-rdpjs.git
 cd node-rdpjs
 npm install
 ```
@@ -41,6 +35,7 @@ var client = rdp.createClient({
 }).on('connect', function () {
 }).on('close', function() {
 }).on('bitmap', function(bitmap) {
+}).on('clipboard', function(content) {
 }).on('error', function(err) {
 }).connect('XXX.XXX.XXX.XXX', 3389);
 ```
@@ -82,6 +77,10 @@ Close event is received when rdp stack is close cleanly
 #### error
 
 Error event is received when a protocol error happened
+
+#### clipboard
+
+Clipboard event is received when the clipboard data changed
 
 #### bitmap
 
@@ -127,6 +126,14 @@ client.sendKeyEventUnicode(code, isPressed);
 
 * code {integer} unicode char of key
 * isPressed {boolean} true for a key pressed event
+
+#### Clipboard
+
+```javascript
+client.setClipboardData(content);
+```
+
+* content {String} clipboard data will be set for remote server
 
 ## Project
 

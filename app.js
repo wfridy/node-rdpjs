@@ -16,6 +16,8 @@ var client = rdp.createClient({
   console.log('close');
 }).on('bitmap', function(bitmap) {
 
+}).on('clipboard', function(content) {
+
 }).on('error', function(err) {
   console.error('Error: ', err)
 }).connect('119.29.203.80', 3389);
