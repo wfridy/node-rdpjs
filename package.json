@@ -13,9 +13,9 @@
   },
   "main": "lib/index.js",
   "dependencies": {
-    "az-bunyan": "0.0.5",
-    "azure-storage": "^2.1.0",
-    "bunyan": "^1.8.10",
+    "az-bunyan": "0.2.0-alpha.2",
+    "azure-storage": "^2.7.0",
+    "bunyan": "^1.8.12",
     "lodash": "4.17.4"
   }
 }
