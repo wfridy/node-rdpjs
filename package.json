@@ -16,6 +16,6 @@
     "az-bunyan": "0.2.0-alpha.2",
     "azure-storage": "^2.8.2",
     "bunyan": "^1.8.12",
-    "lodash": "^4.17.10"
+    "lodash.isnumber": "^3.0.3"
   }
 }
