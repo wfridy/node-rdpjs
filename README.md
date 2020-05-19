@@ -1,7 +1,7 @@
 node-rdpjs
 ========
 
-Identical to [node-rdpjs](github.com/citronneur/node-rdpjs)node-rdpjs but just updated for latest versions of Node.
+Identical to [node-rdpjs](github.com/citronneur/node-rdpjs) but just updated for latest versions of Node.
 
 Remote Desktop Protocol for Node.js
 
